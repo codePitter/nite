@@ -1,0 +1,224 @@
+/* ============================================
+   NITE BY LIS — Colecciones
+   css/colecciones.css
+   ============================================ */
+
+/* ---- Page header ---- */
+.col-header {
+  padding: 140px 64px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 40px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.col-header-eyebrow {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.col-header-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(60px, 8vw, 120px);
+  line-height: 0.9;
+  letter-spacing: 3px;
+  color: var(--white);
+}
+
+.col-header-title span {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--silver);
+}
+
+.col-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.col-header-desc {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  line-height: 2.2;
+  text-align: right;
+  max-width: 300px;
+}
+
+.col-count {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  color: transparent;
+  -webkit-text-stroke: 1px #666;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+/* ---- Back link ---- */
+.back-link {
+  display: block;
+  padding: 20px 64px 32px;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--silver);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: var(--white);
+}
+
+/* ---- Filters ---- */
+.filters-wrap {
+  padding: 40px 64px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #111;
+}
+
+.filter-label {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-right: 16px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--silver);
+  background: none;
+  border: 1px solid #222;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+}
+
+.filter-btn:hover {
+  border-color: var(--silver);
+  color: var(--white);
+}
+
+.filter-btn.active {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+
+/* ---- Collections grid ---- */
+.col-grid-wrap {
+  padding: 60px 64px 100px;
+}
+
+.col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.col-grid .product-card {
+  aspect-ratio: 3/4;
+}
+
+.col-grid .product-card.feat {
+  grid-row: span 2;
+  aspect-ratio: auto;
+}
+
+.product-card.hidden {
+  display: none;
+}
+
+/* ---- WhatsApp button ---- */
+.product-id {
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #25D366;
+  color: #000;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-wa::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'%3E%3Cpath d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z'/%3E%3Cpath d='M12 0C5.373 0 0 5.373 0 12c0 2.125.555 4.12 1.524 5.855L.057 23.882l6.196-1.424A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.52-5.17-1.424l-.37-.22-3.68.845.878-3.55-.242-.378A9.942 9.942 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-wa:hover {
+  background: #1ebe5d;
+  transform: translateY(-1px);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .col-header {
+    grid-template-columns: 1fr;
+    padding: 120px 32px 48px;
+  }
+
+  .col-header-right {
+    align-items: flex-start;
+  }
+
+  .col-header-desc {
+    text-align: left;
+  }
+
+  .filters-wrap {
+    padding: 32px;
+    flex-wrap: wrap;
+  }
+
+  .col-grid-wrap {
+    padding: 40px 32px 80px;
+  }
+
+  .col-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-grid .product-card.feat {
+    grid-row: span 1;
+    aspect-ratio: 3/4;
+  }
+
+  .back-link {
+    padding: 16px 32px;
+  }
+}

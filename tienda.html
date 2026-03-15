@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda — NITE BY LIS [MOCKUP]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Bebas+Neue&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/tienda.css">
+</head>
+<body class="page-inner">
+
+  <!-- MOCKUP BANNER — visible solo en desarrollo -->
+  <div class="dev-banner">
+    ⚠ MOCKUP · Página en desarrollo · No visible para usuarios · Acceso: tienda.html
+  </div>
+
+  <!-- NAV (Tienda visible aquí porque estamos en la página) -->
+  <nav>
+    <a href="index.html" class="nav-logo">NITE BY LIS</a>
+    <ul class="nav-links">
+      <li><a href="tienda.html" style="color:var(--white)">Tienda</a></li>
+      <li><a href="colecciones.html">Colecciones</a></li>
+      <li><a href="info.html">Info</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="cart-toggle" id="cartToggle" aria-label="Abrir carrito">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 01-8 0"/>
+      </svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="shop-header">
+    <div class="shop-header-inner">
+      <span class="shop-eyebrow">✦ Compra directa · Próximamente</span>
+      <h1 class="shop-title">TIENDA</h1>
+      <p class="shop-desc">Aquí podrás comprar directamente. Por ahora, <a href="colecciones.html">consultá por WhatsApp</a> desde Colecciones.</p>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters-wrap">
+    <span class="filter-label">Filtrar por</span>
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="nuevo">Nuevo</button>
+    <button class="filter-btn" data-filter="tops">Tops</button>
+    <button class="filter-btn" data-filter="faldas">Faldas</button>
+    <button class="filter-btn" data-filter="conjuntos">Conjuntos</button>
+  </div>
+
+  <!-- SHOP GRID -->
+  <div class="shop-grid-wrap">
+    <div class="shop-grid">
+
+      <div class="shop-card reveal" data-cat="tops nuevo" data-id="NBL-TOP-MESH-001" data-name="Cota de Malla Triangular" data-price="0">
+        <div class="shop-img"><img src="img/1.jpg" alt="Cota de Malla Triangular"></div>
+        <div class="shop-tag">Nuevo</div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-MESH-001</p>
+          <p class="shop-name">Cota de Malla Triangular</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-MESH-001" data-name="Cota de Malla Triangular">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Cota%20de%20Malla%20Triangular%20%28NBL-TOP-MESH-001%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-MESH-002" data-name="Cota de Malla V-Neck" data-price="0">
+        <div class="shop-img"><img src="img/2.jpg" alt="Cota de Malla V-Neck"></div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-MESH-002</p>
+          <p class="shop-name">Cota de Malla V-Neck</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-MESH-002" data-name="Cota de Malla V-Neck">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Cota%20de%20Malla%20V-Neck%20%28NBL-TOP-MESH-002%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-CHN-001" data-name="Bralette de Aros y Cadenas" data-price="0">
+        <div class="shop-img"><img src="img/3.jpg" alt="Bralette de Aros y Cadenas"></div>
+        <div class="shop-tag shop-tag--bs">Bestseller</div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-CHN-001</p>
+          <p class="shop-name">Bralette de Aros y Cadenas</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-CHN-001" data-name="Bralette de Aros y Cadenas">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Bralette%20de%20Aros%20y%20Cadenas%20%28NBL-TOP-CHN-001%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="faldas" data-id="NBL-SKT-CHN-001" data-name="Falda de Cadenas Drapeadas" data-price="0">
+        <div class="shop-img"><img src="img/4.jpg" alt="Falda de Cadenas Drapeadas"></div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-SKT-CHN-001</p>
+          <p class="shop-name">Falda de Cadenas Drapeadas</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-SKT-CHN-001" data-name="Falda de Cadenas Drapeadas">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Falda%20de%20Cadenas%20Drapeadas%20%28NBL-SKT-CHN-001%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops nuevo" data-id="NBL-TOP-CHRYS-001" data-name="Top Cristales Transparentes" data-price="0">
+        <div class="shop-img"><img src="img/5.jpg" alt="Top Cristales Transparentes"></div>
+        <div class="shop-tag">Nuevo</div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-CHRYS-001</p>
+          <p class="shop-name">Top Cristales Transparentes</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-CHRYS-001" data-name="Top Cristales Transparentes">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Top%20Cristales%20Transparentes%20%28NBL-TOP-CHRYS-001%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-CHRYS-002" data-name="Top Cristales Flor con Flecos" data-price="0">
+        <div class="shop-img"><img src="img/6.jpg" alt="Top Cristales Flor con Flecos"></div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-CHRYS-002</p>
+          <p class="shop-name">Top Cristales Flor con Flecos</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-CHRYS-002" data-name="Top Cristales Flor con Flecos">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Top%20Cristales%20Flor%20con%20Flecos%20%28NBL-TOP-CHRYS-002%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-CHRYS-003" data-name="Top Cristales Largo" data-price="0">
+        <div class="shop-img"><img src="img/7.jpg" alt="Top Cristales Largo"></div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-CHRYS-003</p>
+          <p class="shop-name">Top Cristales Largo</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-CHRYS-003" data-name="Top Cristales Largo">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Top%20Cristales%20Largo%20%28NBL-TOP-CHRYS-003%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-CHRYSB-001" data-name="Top Cristales Negros Flor" data-price="0">
+        <div class="shop-img"><img src="img/8.jpg" alt="Top Cristales Negros Flor"></div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-CHRYSB-001</p>
+          <p class="shop-name">Top Cristales Negros Flor</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-CHRYSB-001" data-name="Top Cristales Negros Flor">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Top%20Cristales%20Negros%20Flor%20%28NBL-TOP-CHRYSB-001%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-MIRB-001" data-name="Top Espejos Negros Redondos" data-price="0">
+        <div class="shop-img"><img src="img/9.jpg" alt="Top Espejos Negros Redondos"></div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-MIRB-001</p>
+          <p class="shop-name">Top Espejos Negros Redondos</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-MIRB-001" data-name="Top Espejos Negros Redondos">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Top%20Espejos%20Negros%20Redondos%20%28NBL-TOP-MIRB-001%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-CHRYSB-002" data-name="Top Cristales Negros Red" data-price="0">
+        <div class="shop-img"><img src="img/10.jpg" alt="Top Cristales Negros Red"></div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-CHRYSB-002</p>
+          <p class="shop-name">Top Cristales Negros Red</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-CHRYSB-002" data-name="Top Cristales Negros Red">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Top%20Cristales%20Negros%20Red%20%28NBL-TOP-CHRYSB-002%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-MIR-001" data-name="Top Espejos Plateados" data-price="0">
+        <div class="shop-img"><img src="img/11.jpg" alt="Top Espejos Plateados"></div>
+        <div class="shop-tag shop-tag--bs">Bestseller</div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-MIR-001</p>
+          <p class="shop-name">Top Espejos Plateados</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-MIR-001" data-name="Top Espejos Plateados">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Top%20Espejos%20Plateados%20%28NBL-TOP-MIR-001%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-MIR-002" data-name="Top Espejos Triangulares" data-price="0">
+        <div class="shop-img"><img src="img/12.jpg" alt="Top Espejos Triangulares"></div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-MIR-002</p>
+          <p class="shop-name">Top Espejos Triangulares</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-MIR-002" data-name="Top Espejos Triangulares">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Top%20Espejos%20Triangulares%20%28NBL-TOP-MIR-002%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="conjuntos nuevo" data-id="NBL-SET-MESH-001" data-name="Conjunto Malla Metálica" data-price="0">
+        <div class="shop-img"><img src="img/13.jpg" alt="Conjunto Malla Metálica"></div>
+        <div class="shop-tag">Nuevo</div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-SET-MESH-001</p>
+          <p class="shop-name">Conjunto Malla Metálica</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-SET-MESH-001" data-name="Conjunto Malla Metálica">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Conjunto%20Malla%20Met%C3%A1lica%20%28NBL-SET-MESH-001%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop-card reveal" data-cat="tops" data-id="NBL-TOP-CHN-002" data-name="Top Cadenas y Cristales" data-price="0">
+        <div class="shop-img"><img src="img/14.jpg" alt="Top Cadenas y Cristales"></div>
+        <div class="shop-info">
+          <p class="shop-id">NBL-TOP-CHN-002</p>
+          <p class="shop-name">Top Cadenas y Cristales</p>
+          <p class="shop-price">Precio a confirmar</p>
+          <div class="shop-actions">
+            <button class="btn-add-cart" data-id="NBL-TOP-CHN-002" data-name="Top Cadenas y Cristales">+ Agregar</button>
+            <a class="btn-wa-sm" href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20comprar%3A%20Top%20Cadenas%20y%20Cristales%20%28NBL-TOP-CHN-002%29" target="_blank" rel="noopener">WA</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <p class="cart-drawer-title">Carrito</p>
+      <button class="cart-close" id="cartClose" aria-label="Cerrar carrito">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Tu carrito está vacío.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span class="cart-total-label">Total</span>
+        <span class="cart-total-val" id="cartTotal">A confirmar</span>
+      </div>
+
+      <!-- MercadoPago mockup -->
+      <div class="mp-section">
+        <p class="mp-label">✦ Pago seguro con</p>
+        <div class="mp-logo">
+          <svg viewBox="0 0 120 28" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <text x="0" y="22" font-family="Arial Black, sans-serif" font-size="20" font-weight="900" fill="#009EE3">mercado</text>
+            <text x="74" y="22" font-family="Arial Black, sans-serif" font-size="20" font-weight="900" fill="#00BCD4">pago</text>
+          </svg>
+        </div>
+        <p class="mp-note">⚠ Integración pendiente — los precios serán definidos antes del lanzamiento.</p>
+        <button class="btn-mp" id="btnCheckout" disabled>Pagar con Mercado Pago</button>
+        <p class="mp-alt">— o —</p>
+        <a class="btn-wa-checkout" id="btnWaCheckout" href="#" target="_blank" rel="noopener">Finalizar por WhatsApp</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <p class="footer-brand">NITE BY LIS</p>
+      <p class="footer-desc">Indumentaria y accesorios artesanales de cadenas, cristales y mallas metálicas. Hecho con amor en Rosario, Argentina.</p>
+    </div>
+        <div>
+      <p class="footer-col-title">Colecciones</p>
+      <ul class="footer-links">
+        <li><a href="colecciones.html?filter=tops">Tops</a></li>
+        <li><a href="colecciones.html?filter=faldas">Faldas</a></li>
+        <li><a href="colecciones.html?filter=conjuntos">Conjuntos</a></li>
+        <li><a href="colecciones.html?filter=nuevo">Novedades</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Info</p>
+      <ul class="footer-links">
+        <li><a href="info.html#sobre-mi">Sobre mí</a></li>
+        <li><a href="info.html#envios">Envíos</a></li>
+        <li><a href="info.html#preguntas">Preguntas</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title" id="contacto">Contacto</p>
+      <ul class="footer-links">
+        <li><a href="https://instagram.com/nite.bylis" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20contactarme%20con%20NITE%20BY%20LIS%20%E2%9C%A6" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://instagram.com/nite.bylis" target="_blank" rel="noopener">DM / MD</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 NITE BY LIS — Todos los derechos reservados</p>
+    <a href="https://instagram.com/nite.bylis" class="footer-ig">@nite.bylis</a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/tienda.js"></script>
+</body>
+</html>

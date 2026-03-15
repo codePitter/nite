@@ -1,0 +1,63 @@
+# ============================================
+# NITE BY LIS — .gitignore
+# ============================================
+
+# Sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Node (si se agrega build tool en el futuro)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+# Build / dist
+dist/
+build/
+.cache/
+
+# Variables de entorno y configuración sensible
+.env
+.env.local
+.env.*.local
+secrets.js
+config.local.js
+
+# MercadoPago / APIs (cuando se integren)
+mp-credentials.json
+api-keys.txt
+
+# Archivos temporales y logs
+*.log
+*.tmp
+*.bak
+*.orig
+
+# Imágenes originales sin comprimir (si se usan herramientas de optimización)
+img/raw/
+img/originals/
+
+# Carpetas de trabajo
+_draft/
+_wip/
+_dev/

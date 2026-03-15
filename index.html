@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NITE BY LIS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Bebas+Neue&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==============================
+       NAV
+  ================================= -->
+  <nav>
+    <a href="#" class="nav-logo">NITE BY LIS</a>
+    <ul class="nav-links">
+      <!-- <li><a href="tienda.html">Tienda</a></li> -->
+      <li><a href="colecciones.html">Colecciones</a></li>
+      <li><a href="info.html">Info</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="https://instagram.com/nite.bylis" style="font-size:11px;letter-spacing:3px;color:var(--silver);text-decoration:none;">
+      ✦ @nite.bylis
+    </a>
+  </nav>
+
+  <!-- ==============================
+       HERO
+  ================================= -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-tagline">✦ Indumentaria & Accesorios · Rosario, ARG</p>
+      <h1 class="hero-title">
+        NITE<br>
+        <span>BY</span>
+        LIS
+      </h1>
+      <p class="hero-subtitle">Accesorios de cuerpo artesanales. Cadenas, cristales y mallas metálicas.</p>
+      <div class="hero-cta">
+        <a href="colecciones.html" class="btn-primary"><span>Ver Colección</span></a>
+        <a href="https://wa.me/5493413000000?text=Hola%21%20Quiero%20consultar%20por%20los%20accesorios%20de%20NITE%20BY%20LIS%20%E2%9C%A6" class="btn-ghost" target="_blank" rel="noopener">Consultar precio</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-video-wrap" id="heroVideoWrap">
+
+        <!-- Colocá tu video en img/hero.mp4 — formato recomendado 9:16 -->
+        <video
+          id="heroVideo"
+          src="vid/hero2.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+
+        <!-- Ícono de pausa / play — sin controles nativos -->
+        <div class="hero-video-pause" id="heroVideoPause">
+          <div class="icon">
+            <!-- Pause (visible cuando el video está reproduciendo) -->
+            <svg id="iconPause" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5"  y="3" width="4" height="18" rx="1"/>
+              <rect x="15" y="3" width="4" height="18" rx="1"/>
+            </svg>
+            <!-- Play (visible cuando el video está pausado) -->
+            <svg id="iconPlay" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+              <polygon points="5,3 19,12 5,21"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+      <div class="product-badge">HAND<br>MADE<br>✦</div>
+      <div class="hero-img-text">NITE</div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       MARQUEE
+  ================================= -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">TOP DE CADENAS</span>
+      <span class="marquee-item">ACCESORIOS DE CRISTALES</span>
+      <span class="marquee-item">MALLA METÁLICA</span>
+      <span class="marquee-item">FALDA DE AROS</span>
+      <span class="marquee-item">HECHO A MANO</span>
+      <span class="marquee-item">ROSARIO ARG</span>
+      <!-- Duplicado para loop continuo -->
+      <span class="marquee-item">TOP DE CADENAS</span>
+      <span class="marquee-item">ACCESORIOS DE CRISTALES</span>
+      <span class="marquee-item">MALLA METÁLICA</span>
+      <span class="marquee-item">FALDA DE AROS</span>
+      <span class="marquee-item">HECHO A MANO</span>
+      <span class="marquee-item">ROSARIO ARG</span>
+    </div>
+  </div>
+
+  <!-- ==============================
+       PRODUCTOS — Lo Nuevo
+  ================================= -->
+  <section class="section">
+    <div class="section-header reveal">
+      <h2 class="section-title">Lo Nuevo</h2>
+      <a href="colecciones.html?filter=nuevo" class="section-link">Ver todo →</a>
+    </div>
+
+    <div class="products-grid">
+
+      <div class="product-card reveal">
+        <div class="product-img">
+          <img src="img/1.jpg" alt="Cota de Malla Triangular">
+        </div>
+        <div class="product-tag">Nuevo</div>
+        <div class="product-overlay">
+          <p class="product-name">Cota de Malla Triangular</p>
+          <p class="product-price">Consultar precio al MD</p>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img">
+          <img src="img/3.jpg" alt="Bralette de Aros y Cadenas">
+        </div>
+        <div class="product-tag">Bestseller</div>
+        <div class="product-overlay">
+          <p class="product-name">Bralette de Aros y Cadenas</p>
+          <p class="product-price">Consultar precio al MD</p>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img">
+          <img src="img/5.jpg" alt="Top Cristales Transparentes">
+        </div>
+        <div class="product-overlay">
+          <p class="product-name">Top Cristales Transparentes</p>
+          <p class="product-price">Consultar precio al MD</p>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img">
+          <img src="img/4.jpg" alt="Falda de Cadenas Drapeadas">
+        </div>
+        <div class="product-overlay">
+          <p class="product-name">Falda de Cadenas Drapeadas</p>
+          <p class="product-price">Consultar precio al MD</p>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img">
+          <img src="img/11.jpg" alt="Top Espejos Plateados">
+        </div>
+        <div class="product-tag">Bestseller</div>
+        <div class="product-overlay">
+          <p class="product-name">Top Espejos Plateados</p>
+          <p class="product-price">Consultar precio al MD</p>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img">
+          <img src="img/8.jpg" alt="Top Cristales Negros Flor">
+        </div>
+        <div class="product-overlay">
+          <p class="product-name">Top Cristales Negros Flor</p>
+          <p class="product-price">Consultar precio al MD</p>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img">
+          <img src="img/13.jpg" alt="Conjunto Malla Metálica">
+        </div>
+        <div class="product-tag">Nuevo</div>
+        <div class="product-overlay">
+          <p class="product-name">Conjunto Malla Metálica</p>
+          <p class="product-price">Consultar precio al MD</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================
+       STATEMENT
+  ================================= -->
+  <div class="statement">
+    <div style="display:flex;justify-content:center;">
+      <p class="statement-label">Nuestra Filosofía</p>
+    </div>
+    <div>
+      <div class="line-deco reveal"><span>✦</span></div>
+      <p class="statement-text reveal">
+        Cada pieza es un acto de <em>alquimia</em>. Metal, cristal y tiempo — transformados en accesorios que te hacen sentir que la noche te pertenece.
+      </p>
+    </div>
+  </div>
+
+  <!-- ==============================
+       COLECCIONES
+  ================================= -->
+  <section class="section" style="padding-bottom:0;">
+    <div class="section-header reveal">
+      <h2 class="section-title">Colecciones</h2>
+      <a href="colecciones.html" class="section-link">Explorar →</a>
+    </div>
+  </section>
+
+  <div class="categories">
+    <a href="colecciones.html?filter=tops" class="cat-item reveal">
+      <div class="cat-bg">
+        <img src="img/11.jpg" alt="Tops">
+      </div>
+      <div class="cat-info">
+        <p class="cat-name">TOPS</p>
+        <p class="cat-count">Cadenas · Cristales · Mallas</p>
+      </div>
+      <div class="cat-arrow">→</div>
+    </a>
+
+    <a href="colecciones.html?filter=faldas" class="cat-item reveal">
+      <div class="cat-bg">
+        <img src="img/4.jpg" alt="Faldas">
+      </div>
+      <div class="cat-info">
+        <p class="cat-name">FALDAS</p>
+        <p class="cat-count">Aros · Cadenas · Metálicas</p>
+      </div>
+      <div class="cat-arrow">→</div>
+    </a>
+
+    <a href="colecciones.html?filter=conjuntos" class="cat-item reveal">
+      <div class="cat-bg">
+        <img src="img/13.jpg" alt="Conjuntos">
+      </div>
+      <div class="cat-info">
+        <p class="cat-name">CONJUNTOS</p>
+        <p class="cat-count">Tops · Faldas · Sets</p>
+      </div>
+      <div class="cat-arrow">→</div>
+    </a>
+  </div>
+
+  <!-- ==============================
+       FOOTER
+  ================================= -->
+  <footer>
+    <div>
+      <p class="footer-brand">NITE BY LIS</p>
+      <p class="footer-desc">Indumentaria y accesorios artesanales de cadenas, cristales y mallas metálicas. Hecho con amor en Rosario, Argentina.</p>
+    </div>
+        <div>
+      <p class="footer-col-title">Colecciones</p>
+      <ul class="footer-links">
+        <li><a href="colecciones.html?filter=tops">Tops</a></li>
+        <li><a href="colecciones.html?filter=faldas">Faldas</a></li>
+        <li><a href="colecciones.html?filter=conjuntos">Conjuntos</a></li>
+        <li><a href="colecciones.html?filter=nuevo">Novedades</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Info</p>
+      <ul class="footer-links">
+        <li><a href="info.html#sobre-mi">Sobre mí</a></li>
+        <li><a href="info.html#envios">Envíos</a></li>
+        <li><a href="info.html#preguntas">Preguntas</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title" id="contacto">Contacto</p>
+      <ul class="footer-links">
+        <li><a href="https://instagram.com/nite.bylis" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://wa.me/0000000000000?text=Hola%21%20Quiero%20contactarme%20con%20NITE%20BY%20LIS%20%E2%9C%A6" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://instagram.com/nite.bylis" target="_blank" rel="noopener">DM / MD</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 NITE BY LIS — Todos los derechos reservados</p>
+    <a href="https://instagram.com/nite.bylis" class="footer-ig">@nite.bylis</a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

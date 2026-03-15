@@ -1,0 +1,342 @@
+/* ============================================
+   NITE BY LIS — Info
+   css/info.css
+   ============================================ */
+
+/* ---- Page header ---- */
+.info-header {
+  padding: 140px 64px 60px;
+  border-bottom: 1px solid #1a1a1a;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.info-eyebrow {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.info-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(72px, 10vw, 140px);
+  line-height: 0.9;
+  letter-spacing: 3px;
+  color: var(--white);
+}
+
+.info-anchors {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 8px;
+}
+
+.info-anchor {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--silver);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.info-anchor:hover {
+  color: var(--white);
+}
+
+.info-anchor-sep {
+  color: #666;
+  font-size: 12px;
+}
+
+/* ---- Section layout ---- */
+.info-section {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 0;
+  padding: 100px 64px;
+}
+
+.info-section-label {
+  padding-top: 8px;
+}
+
+.info-section-label span {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 56px;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px #666;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.info-section-label p {
+  font-size: 9px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.info-section-body {
+  padding-left: 40px;
+  border-left: 1px solid #1a1a1a;
+}
+
+.info-section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 3.5vw, 52px);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--white);
+  margin-bottom: 48px;
+  line-height: 1.1;
+}
+
+.info-divider {
+  height: 1px;
+  background: #111;
+  margin: 0 64px;
+}
+
+/* ---- Bio ---- */
+.info-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 640px;
+  margin-bottom: 56px;
+}
+
+.info-bio-text {
+  font-size: 14px;
+  line-height: 2;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.info-bio-text em {
+  font-style: italic;
+  color: var(--white);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+}
+
+/* ---- Stats ---- */
+.info-stats {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 56px;
+  padding: 40px 0;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+}
+
+.info-stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 44px;
+  letter-spacing: 3px;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.info-stat-label {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ---- Contact CTA ---- */
+.info-contact-cta {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.info-contact-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ---- Envíos cards ---- */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background: #0e0e0e;
+  border: 1px solid #1a1a1a;
+  padding: 32px 28px;
+  transition: border-color 0.3s;
+}
+
+.info-card:hover {
+  border-color: #2a2a2a;
+}
+
+.info-card-icon {
+  font-size: 14px;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.info-card-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.info-card-text {
+  font-size: 12px;
+  line-height: 2;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.info-note {
+  padding: 24px 28px;
+  border-left: 2px solid var(--gold);
+  background: #0a0a0a;
+  margin-bottom: 0;
+}
+
+.info-note p {
+  font-size: 12px;
+  line-height: 2;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.info-note strong {
+  color: var(--silver);
+  font-weight: 400;
+}
+
+/* ---- FAQ ---- */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #141414;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--silver);
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  transition: color 0.3s;
+}
+
+.faq-question:hover {
+  color: var(--white);
+}
+
+.faq-question[aria-expanded="true"] {
+  color: var(--white);
+}
+
+.faq-arrow {
+  font-size: 16px;
+  color: var(--gold);
+  transition: transform 0.35s ease;
+  flex-shrink: 0;
+}
+
+.faq-question[aria-expanded="true"] .faq-arrow {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-answer.open {
+  max-height: 200px;
+  padding-bottom: 24px;
+}
+
+.faq-answer p {
+  font-size: 13px;
+  line-height: 2;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .info-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 32px 48px;
+  }
+
+  .info-section {
+    grid-template-columns: 1fr;
+    padding: 64px 32px;
+  }
+
+  .info-section-label {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .info-section-label span { font-size: 36px; margin-bottom: 0; }
+
+  .info-section-body {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .info-stats {
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .info-divider {
+    margin: 0 32px;
+  }
+}
