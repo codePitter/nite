@@ -240,7 +240,7 @@ body > nav::after {
   background: var(--black);
   display: flex;
   flex-direction: column;
-  border-left: 1px solid rgba(192,192,192,0.12);
+  border-left: 1px solid rgba(192, 192, 192, 0);
 }
 
 /* IG overlay inside hero-right */
