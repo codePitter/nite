@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Referencia — NITE BY LIS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #080808;
+      color: #f5f0e8;
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      padding: 48px 40px;
+    }
+
+    header {
+      margin-bottom: 48px;
+      border-bottom: 1px solid #1f1f1f;
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+      letter-spacing: 4px;
+      color: #f5f0e8;
+    }
+
+    .subtitle {
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #888;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #0e0e0e;
+      border: 1px solid #1a1a1a;
+      overflow: hidden;
+    }
+
+    .card-img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .card-body {
+      padding: 14px 16px;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    .card-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: #444;
+      margin-bottom: 4px;
+    }
+
+    .card-code {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #b8954a;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      word-break: break-all;
+    }
+
+    .card-name {
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #f5f0e8;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .card-cats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .tag {
+      font-size: 8px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border: 1px solid #222;
+      color: #888;
+    }
+
+    .tag.nuevo { border-color: #b8954a; color: #b8954a; }
+    .tag.bestseller { border-color: #c8c8c8; color: #c8c8c8; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>NITE BY LIS</h1>
+      <p class="subtitle">Referencia de productos · 14 piezas</p>
+    </div>
+    <p class="subtitle">Uso interno</p>
+  </header>
+
+  <div class="grid">
+
+    <div class="card">
+      <img class="card-img" src="img/1.jpg" alt="Conjunto Malla Metálica">
+      <div class="card-body">
+        <p class="card-num">01</p>
+        <p class="card-code">NBL-SET-MESH-001</p>
+        <p class="card-name">Conjunto Malla Metálica</p>
+        <div class="card-cats"><span class="tag">conjuntos</span><span class="tag nuevo">nuevo</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/2.jpg" alt="Top Cadenas y Cristales">
+      <div class="card-body">
+        <p class="card-num">02</p>
+        <p class="card-code">NBL-TOP-CHN-002</p>
+        <p class="card-name">Top Cadenas y Cristales</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/3.jpg" alt="Cota de Malla Triangular">
+      <div class="card-body">
+        <p class="card-num">03</p>
+        <p class="card-code">NBL-TOP-MESH-001</p>
+        <p class="card-name">Cota de Malla Triangular</p>
+        <div class="card-cats"><span class="tag">tops</span><span class="tag nuevo">nuevo</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/4.jpg" alt="Cota de Malla V-Neck">
+      <div class="card-body">
+        <p class="card-num">04</p>
+        <p class="card-code">NBL-TOP-MESH-002</p>
+        <p class="card-name">Cota de Malla V-Neck</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/5.jpg" alt="Bralette de Aros y Cadenas">
+      <div class="card-body">
+        <p class="card-num">05</p>
+        <p class="card-code">NBL-TOP-CHN-001</p>
+        <p class="card-name">Bralette de Aros y Cadenas</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/6.jpg" alt="Falda de Cadenas Drapeadas">
+      <div class="card-body">
+        <p class="card-num">06</p>
+        <p class="card-code">NBL-SKT-CHN-001</p>
+        <p class="card-name">Falda de Cadenas Drapeadas</p>
+        <div class="card-cats"><span class="tag">faldas</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/7.jpg" alt="Top Cristales Transparentes">
+      <div class="card-body">
+        <p class="card-num">07</p>
+        <p class="card-code">NBL-TOP-CHRYS-001</p>
+        <p class="card-name">Top Cristales Transparentes</p>
+        <div class="card-cats"><span class="tag">tops</span><span class="tag nuevo">nuevo</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/8.jpg" alt="Top Cristales Flor con Flecos">
+      <div class="card-body">
+        <p class="card-num">08</p>
+        <p class="card-code">NBL-TOP-CHRYS-002</p>
+        <p class="card-name">Top Cristales Flor con Flecos</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/9.jpg" alt="Top Cristales Largo">
+      <div class="card-body">
+        <p class="card-num">09</p>
+        <p class="card-code">NBL-TOP-CHRYS-003</p>
+        <p class="card-name">Top Cristales Largo</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/10.jpg" alt="Top Cristales Negros Flor">
+      <div class="card-body">
+        <p class="card-num">10</p>
+        <p class="card-code">NBL-TOP-CHRYSB-001</p>
+        <p class="card-name">Top Cristales Negros Flor</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/11.jpg" alt="Top Espejos Negros Redondos">
+      <div class="card-body">
+        <p class="card-num">11</p>
+        <p class="card-code">NBL-TOP-MIRB-001</p>
+        <p class="card-name">Top Espejos Negros Redondos</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/12.jpg" alt="Top Cristales Negros Red">
+      <div class="card-body">
+        <p class="card-num">12</p>
+        <p class="card-code">NBL-TOP-CHRYSB-002</p>
+        <p class="card-name">Top Cristales Negros Red</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/13.jpg" alt="Top Espejos Plateados">
+      <div class="card-body">
+        <p class="card-num">13</p>
+        <p class="card-code">NBL-TOP-MIR-001</p>
+        <p class="card-name">Top Espejos Plateados</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img" src="img/14.jpg" alt="Top Espejos Triangulares">
+      <div class="card-body">
+        <p class="card-num">14</p>
+        <p class="card-code">NBL-TOP-MIR-002</p>
+        <p class="card-name">Top Espejos Triangulares</p>
+        <div class="card-cats"><span class="tag">tops</span></div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
