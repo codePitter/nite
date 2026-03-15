@@ -524,4 +524,4 @@
   .shop-grid-wrap { padding: 40px 32px 80px; }
   .shop-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .cart-drawer { width: 100%; }
-}
+}   
