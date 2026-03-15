@@ -901,7 +901,7 @@ footer {
     z-index: 102;
   }
 
-  .nav-links,
+  body > nav .nav-links,
   .nav-ig {
     display: none;
   }
@@ -965,7 +965,6 @@ footer {
 
   .hero-img-text {
     font-size: 80px;
-    bottom: 10px;
   }
 
   .product-badge {
