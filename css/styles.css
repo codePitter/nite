@@ -62,7 +62,7 @@ body > nav {
   transition: background 0.4s ease, backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease;
 }
 
-/* Páginas sin hero (info, colecciones, tienda) — nav siempre visible */
+
 body.page-inner > nav {
   background: rgba(8,8,8,0.92) !important;
   backdrop-filter: blur(10px) !important;
@@ -92,6 +92,9 @@ body > nav::after {
   display: flex;
   gap: 36px;
   list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-links a {
@@ -114,13 +117,14 @@ body > nav::after {
   text-decoration: none;
 }
 .hero {
-  height: 100vh;
-  max-height: 900px;
+  min-height: 100vh;    /* fallback navegadores viejos */
+  min-height: 100dvh;   /* ← llena el viewport pero puede crecer si el contenido lo necesita */
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr 1fr;
   align-items: stretch;
   position: relative;
   overflow: hidden;
+  z-index: 2;           /* ← evita que marquee/section (z-index:1) tapen el borde inferior */
 }
 
 .hero-left {
@@ -236,6 +240,26 @@ body > nav::after {
   background: var(--black);
   display: flex;
   flex-direction: column;
+  border-left: 1px solid rgba(192,192,192,0.12);
+}
+
+/* IG overlay inside hero-right */
+.hero-ig-overlay {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--silver);
+  text-decoration: none;
+  transition: color 0.3s;
+  pointer-events: auto;
+}
+
+.hero-ig-overlay:hover {
+  color: var(--white);
 }
 
 .hero-img-placeholder {
@@ -281,8 +305,8 @@ body > nav::after {
 
 .product-badge {
   position: absolute;
-  top: 90px;
-  right: 40px;
+  bottom: 50px;
+  left: 32px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -312,6 +336,10 @@ body > nav::after {
   overflow: hidden;
   background: var(--gold);
   padding: 14px 0;
+  display: block;
+  margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .marquee-track {
@@ -337,6 +365,9 @@ body > nav::after {
 /* ---------- Sections ---------- */
 .section {
   padding: 100px 64px;
+  position: relative;
+  z-index: 1;
+  background: var(--black);
 }
 
 .section-header {
@@ -902,7 +933,8 @@ footer {
   }
 
   body > nav .nav-links,
-  .nav-ig {
+  .nav-ig,
+  .hero-ig-overlay {
     display: none;
   }
 
@@ -968,8 +1000,10 @@ footer {
   }
 
   .product-badge {
-    top: 16px;
-    right: 16px;
+    bottom: 10px;
+    left: 16px;
+    top: auto;
+    right: auto;
     width: 60px;
     height: 60px;
     font-size: 6px;
@@ -1110,4 +1144,4 @@ footer {
   .footer-bottom {
     padding: 14px 20px;
   }
-}   
+}
