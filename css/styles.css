@@ -798,3 +798,260 @@ footer {
   text-transform: uppercase;
   color: var(--gold);
 }
+
+/* ============================================
+   RESPONSIVE — Mobile First
+   Breakpoints: 768px (tablet) · 480px (mobile)
+   ============================================ */
+
+/* ---------- Tablet ---------- */
+@media (max-width: 768px) {
+
+  /* Nav */
+  body > nav {
+    padding: 20px 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  /* Hero — stack vertical */
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    max-height: none;
+    min-height: 100svh;
+  }
+
+  .hero-left {
+    padding: 120px 32px 48px;
+    order: 1;
+  }
+
+  .hero-right {
+    order: 2;
+    height: 60vw;
+    min-height: 280px;
+    max-height: 440px;
+  }
+
+  .hero-title {
+    font-size: clamp(56px, 16vw, 100px);
+  }
+
+  .hero-img-text {
+    font-size: 100px;
+  }
+
+  .product-badge {
+    top: 16px;
+    right: 16px;
+    width: 64px;
+    height: 64px;
+    font-size: 7px;
+  }
+
+  /* Products grid */
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-card:first-child {
+    grid-row: span 1;
+    aspect-ratio: 3/4;
+  }
+
+  /* Overlay siempre visible en mobile */
+  .product-overlay {
+    transform: translateY(0);
+    opacity: 1;
+    background: linear-gradient(to top, rgba(8,8,8,0.98) 0%, rgba(8,8,8,0.3) 100%);
+  }
+
+  /* Statement */
+  .statement {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 64px 32px;
+  }
+
+  .statement-label {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  /* Sections */
+  .section {
+    padding: 64px 32px;
+  }
+
+  /* Categories */
+  .categories {
+    padding: 40px 32px;
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .cat-item {
+    aspect-ratio: 3/1;
+    min-height: 120px;
+  }
+
+  .cat-bg img {
+    object-position: center 30%;
+  }
+
+  /* Footer */
+  footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 32px 32px;
+  }
+
+  .footer-bottom {
+    padding: 20px 32px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 480px) {
+
+  /* Nav — logo + IG, links abajo */
+  body > nav {
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 14px 0;
+  }
+
+  .nav-logo {
+    font-size: 18px;
+    letter-spacing: 3px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  body > nav > a:last-child {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 10px;
+  }
+
+  .nav-links {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  /* Hero */
+  .hero-left {
+    padding: 100px 20px 40px;
+  }
+
+  .hero-title {
+    font-size: clamp(52px, 18vw, 80px);
+  }
+
+  .hero-subtitle {
+    font-size: 10px;
+    letter-spacing: 3px;
+    max-width: 240px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .btn-primary {
+    padding: 14px 32px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-right {
+    height: 70vw;
+  }
+
+  /* Marquee */
+  .marquee-item {
+    font-size: 11px;
+    padding: 0 24px;
+  }
+
+  /* Products */
+  .section {
+    padding: 48px 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  .product-name {
+    font-size: 14px;
+  }
+
+  .product-price {
+    font-size: 10px;
+  }
+
+  /* Statement */
+  .statement {
+    padding: 48px 20px;
+  }
+
+  .statement-text {
+    font-size: clamp(20px, 5vw, 28px);
+  }
+
+  /* Categories */
+  .categories {
+    padding: 32px 20px;
+  }
+
+  .cat-item {
+    aspect-ratio: 5/2;
+  }
+
+  .cat-name {
+    font-size: 24px;
+  }
+
+  /* Footer */
+  footer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 48px 20px 28px;
+  }
+
+  .footer-brand {
+    font-size: 24px;
+  }
+
+  .footer-bottom {
+    padding: 16px 20px;
+  }
+}
