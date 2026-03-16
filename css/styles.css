@@ -494,6 +494,13 @@ body > nav::after {
   font-size: 12px;
   letter-spacing: 2px;
   color: var(--gold);
+  text-decoration: none;          /* cuando es <a> */
+  display: block;                 /* cuando es <a> */
+  transition: color 0.3s;
+}
+
+a.product-price:hover {
+  color: var(--white);
 }
 
 .product-tag {
@@ -706,6 +713,36 @@ footer {
   letter-spacing: 2px;
   color: var(--silver);
   text-decoration: none;
+}
+
+/* ---------- Footer dev credit ---------- */
+.footer-dev {
+  padding: 12px 64px;
+  border-top: 1px solid #0f0f0f;
+  background: #050505;
+  text-align: center;
+}
+
+.footer-dev-text {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.footer-dev-link {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-dev-link:hover {
+  color: var(--silver);
+}
+
+.footer-dev-sep {
+  margin: 0 8px;
+  color: #555;
 }
 
 /* ---------- Hero Video ---------- */
@@ -1071,6 +1108,10 @@ footer {
     flex-direction: column;
     gap: 8px;
     text-align: center;
+  }
+
+  .footer-dev {
+    padding: 12px 28px;
   }
 }
 
