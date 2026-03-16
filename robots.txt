@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tienda.html
+
+Sitemap: https://nitebylis.com/sitemap.xml
