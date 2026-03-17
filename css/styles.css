@@ -494,13 +494,6 @@ body > nav::after {
   font-size: 12px;
   letter-spacing: 2px;
   color: var(--gold);
-  text-decoration: none;          /* cuando es <a> */
-  display: block;                 /* cuando es <a> */
-  transition: color 0.3s;
-}
-
-a.product-price:hover {
-  color: var(--white);
 }
 
 .product-tag {
@@ -764,6 +757,12 @@ footer {
   display: block;
   border: none;
   outline: none;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.hero-video-wrap video.loaded {
+  opacity: 1;
 }
 
 /* Icono de pausa — aparece al hover y cuando está pausado */
@@ -1034,7 +1033,6 @@ footer {
 
   .hero-img-text {
     font-size: 80px;
-    bottom: 75px;
   }
 
   .product-badge {

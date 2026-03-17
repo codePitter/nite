@@ -80,6 +80,14 @@ const iconPause = document.getElementById('iconPause');
 const iconPlay  = document.getElementById('iconPlay');
 
 if (videoWrap && video) {
+  // Fade in video once it can play — avoids black flash on first load
+  const showVideo = () => video.classList.add('loaded');
+  if (video.readyState >= 3) {
+    showVideo(); // already loaded (cached)
+  } else {
+    video.addEventListener('canplay', showVideo, { once: true });
+  }
+
   videoWrap.addEventListener('click', () => {
     if (video.paused) {
       video.play();
